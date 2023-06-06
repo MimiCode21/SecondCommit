@@ -10,7 +10,7 @@ const app = express()
 
 //adding express json (can be used anywhere)
 app.use('/fruits',express.json())
-
+/*what I added into*/ app.use(cors())
 //creating main page
 app.get('/', (request,response) => {
     response.send("Hello Fruit API")
